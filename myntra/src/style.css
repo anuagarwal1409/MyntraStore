@@ -1,0 +1,32 @@
+body {
+    background-color: #273d49cc;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #ffffff;
+  }
+  table {
+    background-color: #273d49cc;
+    width: 1rem;
+    text-align: center;
+    border-spacing: 0.05rem;
+  }
+  .main_heading {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 5vh;
+    color: #ffffff;
+  }
+  
+  /* bgcolor even rows */
+  tr:nth-child(even) {
+    background-color: #283a46;
+  }
+  /* bgcolor odd rows */
+  tr:nth-child(odd) {
+    background-color: #273d49cc;
+  }
+  .MuiTableCell-root {
+    color: #ffffff !important;
+  }
+  
