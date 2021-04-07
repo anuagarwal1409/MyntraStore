@@ -15,12 +15,13 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
+
 import GridList from '@material-ui/core/GridList';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
-    
   },
   media: {
     height: 0,
@@ -47,6 +48,7 @@ const useStyles = makeStyles((theme) => ({
     height:'550px',
     margin:'10px',
   },
+
 }));
 
 export default function ShopDetails() {
@@ -59,6 +61,7 @@ export default function ShopDetails() {
 
   return (
       <div>
+
           <GridList className={classes.gridList} cols={2.5}>
             <Card style={{height:'425px', margin:"10px"}}>
                 <CardHeader
@@ -103,17 +106,25 @@ export default function ShopDetails() {
                     
             
             <Card style={{height:'425px', margin:"10px"}}>
+
+          
+
             <CardHeader
                 action={
                 <IconButton aria-label="settings">
                     <MoreVertIcon />
                 </IconButton>
                 }
+
                 title="Levi's"
+
+                title="H&M"
+
                 
             />
             <CardMedia
                 className={classes.media}
+
                 image="https://cdn.cheapism.com/images/Landsend.max-784x410.jpg"
                 
             />
@@ -141,6 +152,7 @@ export default function ShopDetails() {
                 <ExpandMoreIcon />
                 </IconButton>
             </CardActions>
+
         </Card>
         <Card style={{height:'425px', margin:"10px"}}>
                 <CardHeader
@@ -183,7 +195,6 @@ export default function ShopDetails() {
 
             </Card>
           </GridList>
-          
       </div>
     
   );

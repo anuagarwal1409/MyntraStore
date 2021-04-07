@@ -1,35 +1,43 @@
 import { Carousel } from "react-bootstrap";
 
+import { makeStyles } from '@material-ui/core/styles';
 import React from "react";
-import Reviews from "./Reviews";
 
+const useStyles = makeStyles((theme) => ({
+  root: {
+   width:'100%'
+  },
+}));
 
 function Details() {
+  const classes = useStyles();
   return (
-    <div>
-            <Carousel style={{height:"500px"}}>
+    <div className={classes.root}>
+            <Carousel>
         <Carousel.Item>
             <img
-            className="d-block w-100"
-            src="https://images.squarespace-cdn.com/content/v1/5442b6cce4b0cf00d1a3bef2/1591210155596-GQPVBDDDTDPMEU0UB56D/ke17ZwdGBToddI8pDm48kA7e4wRd4ZDldd6PbS9BVI5Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpyvXn8XMwMq-aCqUEV8fAVtSaljtELrLyv8fOgO87iUSoS6gU-xB5T__qABPCYgFO0/Organic-Clothing-Brands-Thought-Clothing?format=500w"
+            src="https://media.istockphoto.com/photos/know-ill-find-something-i-like-here-picture-id694044976?k=6&m=694044976&s=612x612&w=0&h=XPxsFIQ5pTVUMC60_BFA3u4v4o_pKmFV4AfBlf17d9U="
             alt="First slide"
+            height='400'
+            width='600'
             />
             
         </Carousel.Item>
         <Carousel.Item >
             <img
-            className="d-block w-100"
-            src="https://www.womansworld.com/wp-content/uploads/2020/10/womens-clothing-store.jpg"
+
+            src="https://media.istockphoto.com/photos/clothes-shop-interior-picture-id901863672?k=6&m=901863672&s=612x612&w=0&h=-_sWo8B6OJRaj4OuwblW8ytajBnBY_UMuaXGjr95wrE="
             alt="Second slide"
-           
+            height='400'
+            width='600'
+
             />
 
             
         </Carousel.Item>
         <Carousel.Item>
             <img
-            className="d-block w-100"
-            src="https://static.fibre2fashion.com/articleresources/images/64/6328/best-buy-for-branded-clothes.jpg"
+            src="https://media.istockphoto.com/photos/boutique-clothing-store-picture-id1152092333?k=6&m=1152092333&s=612x612&w=0&h=ps8pv0Esh1EwyNTpGBNebgNCJ8wiOWCduoJo2ggAi1g="
             alt="Third slide"
             height='400'
             width='600'
@@ -38,7 +46,6 @@ function Details() {
             
         </Carousel.Item>
         </Carousel>
-        <Reviews/>
     </div>
   );
 }

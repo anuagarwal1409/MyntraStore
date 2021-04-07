@@ -16,7 +16,7 @@ const NavLink = styled(navLinkComp)`
   transition: left 0.2s ease-out, width 0.2s ease-out;
   font-weight: 500;
   text-transform: uppercase;
-  hover{
+  :hover{
     border-bottom-color: #fb56c1,
     border-bottom-width: 4px,
     border-bottom-style: solid,

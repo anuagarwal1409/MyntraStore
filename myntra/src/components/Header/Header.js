@@ -15,6 +15,7 @@ function Header() {
         <div className="left-items">
           <FontAwesomeIcon className="bar_icon" icon="bars" />
           <BrandLogo className="brand_logo" />
+
           <StyledNV className="nav_link">MEN</StyledNV>
           <StyledNV className="nav_link">WOMEN</StyledNV>
           <StyledNV className="nav_link">KIDS</StyledNV>
@@ -23,7 +24,6 @@ function Header() {
           <StyledNV>
             <NavLink to="/store" className="nav_link" >STORE</NavLink>
           </StyledNV>
-          
         </div>
         <div className="right-items">
           <SearchBar className="search-bar" />

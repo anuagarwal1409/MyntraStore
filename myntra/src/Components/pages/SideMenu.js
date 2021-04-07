@@ -5,6 +5,7 @@ import { Grid } from '@material-ui/core';
 import pic1 from '../Myntra1.jpg'
 import pic2 from '../m2.jpg'
 
+
 const drawerWidth = 500;
 const drawerHeight = 720; 
 const useStyles = makeStyles(theme => ({
@@ -15,6 +16,7 @@ const useStyles = makeStyles(theme => ({
   },
   drawerPaper: {
     width: drawerWidth,
+
     height: drawerHeight,
     backgroundImage: `linear-gradient(#cfd9df,#e2ebf0)`,
     color: 'grey',
@@ -41,7 +43,9 @@ function SideMenu() {
           src='C:\Users\KIIT\Desktop\MyntraStore\myntra\src\Myntra1.jpg'
           className={classes.bigAvatar}
         /> */}
+
          <div style={{display:'flex', height: '100%'}}>
+
          <img src={pic1} alt="pic1" />;
          <img src={pic2} alt="pic2" />;
          </div>

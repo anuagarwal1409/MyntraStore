@@ -13,6 +13,9 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+html, body, #map {
+  height: 100%;
+}
 
 .App-header {
   background-color: #ffffff;
@@ -37,5 +40,7 @@
     transform: rotate(360deg);
   }
 }
+
+
 
 
