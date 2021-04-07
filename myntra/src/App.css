@@ -1,7 +1,7 @@
 
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 .App-logo {
   height: 40vmin;
@@ -12,6 +12,9 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+html, body, #map {
+  height: 100%;
 }
 
 .App-header {
@@ -37,5 +40,7 @@
     transform: rotate(360deg);
   }
 }
+
+
 
 
