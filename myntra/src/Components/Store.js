@@ -6,6 +6,7 @@ import {DisplayMapFC} from "./DisplayMapFC";
 import { Grid, Typography, makeStyles} from '@material-ui/core';
 import TabLayout from './TabLayout';
 import ComplainCell from './ComplainCell';
+import Chat from './ChatModeule/chat';
 
 const useStyles = makeStyles({
     root: {
@@ -42,7 +43,8 @@ export default function Store() {
                     </Grid>
                     <Grid item lg={7} className={classes.lower}>
                         <TabLayout/> 
-                        <ComplainCell/>             
+                        <ComplainCell/>          
+                        <Chat/>
                     </Grid>
                 </Grid>
             </div>
