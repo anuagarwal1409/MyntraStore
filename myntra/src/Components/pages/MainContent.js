@@ -4,8 +4,6 @@ import { Grid } from '@material-ui/core';
 import { Typography } from '@material-ui/core';
 import { InputBase, TextField, OutlinedInput, Button } from '@material-ui/core';
 import ShopDetails from '../NearbyShops';
-import SideMenu from './SideMenu';
-
 
 
 const useStyles = makeStyles(theme => ({
@@ -29,11 +27,8 @@ function MainContent() {
 
   return (
     <main className={classes.fullWidth}>
-
-      
-      {/* <div className={classes.toolbar} /> */}
+      <div className={classes.toolbar} />
       <div className={classes.title}>
-        
         <Typography variant='h6'>Biba</Typography>
       </div>
       <div className={classes.content}>
@@ -74,6 +69,11 @@ function MainContent() {
         <Button variant="contained" aria-label="outlined contained button group" style={{color:'white',backgroundColor:'#97A1A9', marginRight:'10px'}}>WISHLIST</Button> <br></br>
        </div>
         </Typography>
+        {/* <Typography style={{color:'black',margin:'5px'}}>
+        <h2>DELIVERY OPTIONS</h2>
+        Address: G 51, Crystal Courtyard, Chandrasekharpur, Patia, Bhubaneswar, Bhubaneshwar - 751024, Near IOCL Office (Map) <br></br>
+        Phone: 09471238698
+        </Typography> */}
         <ShopDetails/>
         
      </div> 

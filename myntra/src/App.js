@@ -7,6 +7,8 @@ import HomeComponent from './components/HomeComponent';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Store from './components/Store';
 import Home from './components/pages/Home';
+import ReturnOtions from './components/OrderPage/ReturnOptions';
+import LandingPage from './components/OrderPage/LandingPage';
 library.add(fas)
 
 
@@ -28,6 +30,9 @@ class App extends Component {
           </Route>
           <Route exact path="/home">
             <Home/>
+          </Route>
+          <Route exact path="/order">
+            <LandingPage/>
           </Route>
         </Switch>
         

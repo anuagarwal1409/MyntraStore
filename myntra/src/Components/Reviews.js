@@ -15,8 +15,8 @@ import Box from '@material-ui/core/Box';
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
-    height: '30px',
-
+    height: '150px',
+    margin:'5px'
   },
   media: {
     height: 0,
@@ -46,10 +46,9 @@ export default function Reviews() {
  
     
   return (
-
     <List className={classes.root}>
-    <ListItem>
-    <Card>
+    <ListItem className={classes.root}>
+    <Card className={classes.root}>
       <CardHeader
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar}>
@@ -76,8 +75,8 @@ export default function Reviews() {
         </CardContent>
     </Card>
     </ListItem>
-    <ListItem>
-    <Card>
+    <ListItem className={classes.root}>
+    <Card className={classes.root}>
       <CardHeader
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar}>
@@ -103,38 +102,7 @@ export default function Reviews() {
       
         </CardContent>
     </Card>
-    </ListItem>
-    <ListItem>
-    <Card>
-
-      <CardHeader
-        avatar={
-          <Avatar aria-label="recipe" className={classes.avatar}>
-            
-          </Avatar>
-        }
-        action={
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
-          </IconButton>
-        }
-        title="Neha Nayak"
-        subheader="September 14, 2016"
-      />
-      
-      <CardContent>
-      
-      <Rating name="read-only" value={value} readOnly />
-      
-        <Typography variant="body2" color="textSecondary" component="p">
-          Good Ambience with a very friendly staff
-        </Typography>
-      
-        </CardContent>
-    </Card>
-
     </ListItem>
     </List>
-
   );
 }
