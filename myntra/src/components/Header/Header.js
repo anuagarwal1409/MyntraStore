@@ -1,11 +1,11 @@
 import HeaderStyled from "./styled/HeaderStyle";
-import NavLink from "./styled/NavLink";
+import StyledNV from "./styled/NavLink";
 import BrandLogo from "./styled/BrandLogo";
 import SearchBar from "./styled/SearchBar";
 import PictureLink from "./styled/PictureLink";
 import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import {NavLink} from "react-router-dom";
 import React from "react";
 
 function Header() {
@@ -15,12 +15,15 @@ function Header() {
         <div className="left-items">
           <FontAwesomeIcon className="bar_icon" icon="bars" />
           <BrandLogo className="brand_logo" />
-          <NavLink className="nav_link">MEN</NavLink>
-          <NavLink className="nav_link">WOMEN</NavLink>
-          <NavLink className="nav_link">KIDS</NavLink>
-          <NavLink className="nav_link">HOME&LIVING</NavLink>
-          <NavLink className="nav_link">OFFERS</NavLink>
-          <NavLink className="nav_link">STORE</NavLink>
+
+          <StyledNV className="nav_link">MEN</StyledNV>
+          <StyledNV className="nav_link">WOMEN</StyledNV>
+          <StyledNV className="nav_link">KIDS</StyledNV>
+          <StyledNV className="nav_link">HOME&LIVING</StyledNV>
+          <StyledNV className="nav_link">OFFERS</StyledNV>
+          <StyledNV >
+            <NavLink to="/store" className="nav_link" style={{color:'black'}}>STORE</NavLink>
+          </StyledNV>
         </div>
         <div className="right-items">
           <SearchBar className="search-bar" />

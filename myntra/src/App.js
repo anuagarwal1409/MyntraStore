@@ -31,7 +31,7 @@ class App extends Component {
           <Route exact path="/home">
             <Home/>
           </Route>
-          <Route exact path="/order">
+          <Route exact path="/bag">
             <LandingPage/>
           </Route>
         </Switch>

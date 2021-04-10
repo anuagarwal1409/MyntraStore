@@ -50,15 +50,15 @@ export default function MainComp() {
           </Grid>
         </Grid>
       </CardActions>
-      <Typography style={{fontSize :'5px',padding :'10px'}}>You have 30 days from the shipping date of your order to return your purchase from Zara.com free of charge. The items must have all their labels and be in perfect condition.
+      <Typography style={{fontSize :'10px',padding :'10px'}}>You have 14 days from the shipping date of your order to return your purchase from Myntra.com free of charge. The items must have all their labels and be in perfect condition.
 
 Click here to see the special actions related to COVID-19.
 
 These are the options for returning your item(s):
 
 
-Zara store
-You can return your order at any Zara store in the same market/region where you made the purchase.
+Myntra store
+You can return your order at any Myntra Partner store in the same market/region where you made the purchase.
 
 You only have to present the purchase receipt along with the items you wish to return. You can show it on the screen of your mobile device or print it out.
 

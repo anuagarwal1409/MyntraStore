@@ -3,6 +3,9 @@
   align-items: center;
   margin-left: 10px;
 }
+.a{
+  color:#000000
+}
 
 .right-items {
   display: flex;
