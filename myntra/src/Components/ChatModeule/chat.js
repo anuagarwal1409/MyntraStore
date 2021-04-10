@@ -2,8 +2,9 @@ import React from 'react';
 import{useEffect} from 'react';
 import { Widget, addResponseMessage, addLinkSnippet, addUserMessage } from 'react-chat-widget';
  
-import 'react-chat-widget/lib/styles.css';
- 
+ import 'react-chat-widget/lib/styles.css';
+ import './chat.css';
+
 import logo1 from './logo1.jpg';
 
 
