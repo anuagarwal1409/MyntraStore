@@ -17,9 +17,15 @@ function Header() {
           <BrandLogo className="brand_logo" />
 
           <StyledNV className="nav_link">MEN</StyledNV>
+
           <StyledNV >
             <NavLink to="/home" className="nav_link" style={{color:'black'}}>WOMEN</NavLink>
           </StyledNV>
+
+
+          
+
+
           <StyledNV className="nav_link">KIDS</StyledNV>
           <StyledNV className="nav_link">HOME&LIVING</StyledNV>
           <StyledNV className="nav_link">OFFERS</StyledNV>
