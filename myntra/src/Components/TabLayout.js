@@ -7,7 +7,7 @@ import Tabs from 'react-bootstrap/Tabs'
 import ImageRow from './ImageRow'
 import ImageRow2 from './ImageRow2'
 
-
+import './navstyle.css'
 
 const useStyles = makeStyles({
   root: {
@@ -23,15 +23,15 @@ function TabLayout() {
   const classes = useStyles();
     return (
         <div>
-            <Tab.Container id="left-tabs-example" defaultActiveKey="first" className="myClass">
+            <Tab.Container id="left-tabs-example" defaultActiveKey="first" className="myClass"style={{backgroundColor:'#b875a7'}}>
             <Row>
     <Col sm={3}>
-      <Nav variant="pills" className="flex-column">
+      <Nav variant="pills" className="flex-column" >
         <Nav.Item>
-          <Nav.Link eventKey="first" className="myClass" >New Collection</Nav.Link>
+          <Nav.Link eventKey="first" className="myClass" style={{color:'black'}}>New Collection</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="second" className="myClass">Summer Incomming</Nav.Link>
+          <Nav.Link eventKey="second" className="myClass" style={{color:'black'}}>Summer Incomming</Nav.Link>
         </Nav.Item>
       </Nav>
     </Col>
